@@ -1,0 +1,63 @@
+#------------------------------------------ 
+# Material Files: 
+#------------------------------------------ 
+material:file = material-DWall-MnPS3.mat
+material:unit-cell-file = domain_wall-MnPS3.ucf
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+#create:periodic-boundaries-x
+#create:periodic-boundaries-y
+#create:periodic-boundaries-z
+#create:spin-initialisation-random-seed = 123456
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:system-size-x = 200.0 !nm 
+dimensions:system-size-y = 49.7 !nm
+dimensions:system-size-z = 3.5 !nm
+#------------------------------------------ 
+# Simulation attributes: 
+#------------------------------------------ 
+sim:equilibration-time-steps = 10000 
+sim:equilibration-temperature = 0
+#sim:preconditioning-steps = 10000
+#---
+sim:total-time-steps = 20000000
+sim:time-steps-increment = 10
+sim:time-step = 0.1 !fs
+#---
+sim:temperature = 0.0
+#---
+#sim:cooling-time = 0.2 !ns
+#sim:maximum-temperature = 0.01
+#sim:minimum-temperature = 0
+#sim:cooling-function = linear
+#---
+sim:applied-field-strength = -7.6 !T
+#sim:equilibration-applied-field-strength = 7.6 !T
+#sim:applied-field-unit-vector = 0,0,1
+#---------------------------------------------------
+# Dipole solver attributes
+#---------------------------------------------------
+dipole:solver = tensor
+#------------------------------------------ 
+# Program and integrator details 
+#------------------------------------------ 
+sim:program = time-series
+sim:integrator = llg-heun
+sim:save-checkpoint = end
+sim:load-checkpoint = continue
+#------------------------------------------ 
+# Data output 
+#------------------------------------------ 
+output:column-headers
+output:real-time
+output:temperature
+output:material-magnetisation
+#---
+output:output-rate = 10000
+#---
+config:atoms
+config:atoms-output-rate = 10000
+##------------------------------------------

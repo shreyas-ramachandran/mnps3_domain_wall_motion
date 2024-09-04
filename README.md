@@ -1,1 +1,1 @@
-# mnps3_domain_wall_moton
+# mnps3_domain_wall_motion_inputs

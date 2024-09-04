@@ -1,0 +1,47 @@
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=4
+#---------------------------------------------------
+# Material 1 Mn_spinUp in MnPS3
+# Material 2 Mn_spinDw in MnPS3
+#---------------DOMAIN WALL-------------------------
+# Material 3 Mn_spinDw in MnPS3
+# Material 4 Mn_spinUp in MnPS3
+#---------------------------------------------------
+material[1]:material-name=Up
+material[1]:damping-constant=0.01
+material[1]:uniaxial-anisotropy-constant=0.025 !meV
+material[1]:uniaxial-anisotropy-direction=0,0,1
+material[1]:initial-spin-direction=0,0,1
+material[1]:atomic-spin-moment=4.68 !muB
+material[1]:material-element=Mn
+material[1]:unit-cell-category = 1
+#---------------------------------------------------
+material[2]:material-name=Dw
+material[2]:damping-constant=0.01
+material[2]:uniaxial-anisotropy-constant=0.025 !meV
+material[2]:uniaxial-anisotropy-direction=0,0,1
+material[2]:initial-spin-direction=0,0,-1
+material[2]:atomic-spin-moment=4.68 !muB
+material[2]:material-element=Mn
+material[2]:unit-cell-category = 2
+#---------------------------------------------------
+material[3]:material-name=Dw
+material[3]:damping-constant=0.01
+material[3]:uniaxial-anisotropy-constant=0.025 !meV
+material[3]:uniaxial-anisotropy-direction=0,0,1
+material[3]:initial-spin-direction=0,0,-1
+material[3]:atomic-spin-moment=4.68 !muB
+material[3]:material-element=Mn
+material[3]:unit-cell-category = 3
+#---------------------------------------------------
+material[4]:material-name=Up
+material[4]:damping-constant=0.01
+material[4]:uniaxial-anisotropy-constant=0.025 !meV
+material[4]:uniaxial-anisotropy-direction=0,0,1
+material[4]:initial-spin-direction=0,0,1
+material[4]:atomic-spin-moment=4.68 !muB
+material[4]:material-element=Mn
+material[4]:unit-cell-category = 4
+#---------------------------------------------------
